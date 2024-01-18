@@ -1,0 +1,43 @@
+[
+  {
+    "name": "item1",
+    "imageUrl": "./public/images/blackcover.png",
+    "price": "99"
+  },
+  {
+    "name": "item1",
+    "imageUrl": "./assets/images/arknight.webp",
+    "price": "99"
+  },
+  {
+    "name": "item1",
+    "imageUrl": "./assets/images/arknight.webp",
+    "price": "99"
+  },
+  {
+    "name": "item1",
+    "imageUrl": "./assets/images/arknight.webp",
+    "price": "99"
+  },
+  {
+    "name": "item1",
+    "imageUrl": "./assets/images/arknight.webp",
+    "price": "99"
+  },
+  {
+    "name": "item1",
+    "imageUrl": "./assets/images/arknight.webp",
+    "price": "99"
+  },
+  {
+    "name": "item1",
+    "imageUrl": "./assets/images/arknight.webp",
+    "price": "99"
+  },
+  {
+    "name": "item2",
+    "imageUrl": "./assets/images/arknight.webp",
+    "price": "99"
+  },
+  { "name": "item3", "imageUrl": "./assets/images/arknight.webp", "price": "99" }
+]

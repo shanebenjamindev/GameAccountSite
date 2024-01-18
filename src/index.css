@@ -1,5 +1,8 @@
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
 :root {
   --primary-color: #ee0033;
+  --primary-fade: #eeeeee;
 }
 
 body {

@@ -1,8 +1,19 @@
 import React from 'react'
+import footerlunar from '../../assets/images/footerlunar.png';
+import footercloud from '../../assets/images/footer_cloud.png';
+import footerlunar2 from '../../assets/images/footerlunar2.png';
 
 export default function FooterComponent() {
     return (
-        <footer>
+        <footer style={{ position: "relative" }}>
+            <div className='d-none d-md-flex w-100' style={{ position: "absolute", bottom: "0", backgroundSize: "100%", height: "50px", backgroundRepeat: "no-repeat", backgroundImage: `url(${footercloud})` }}>
+                <div style={{ position: 'absolute', left: 20, top: -50 }} >
+                    <img src={footerlunar2} />
+                </div>
+                <div style={{ position: 'absolute', right: 50, top: -150, transform: 'rotateY(180deg)'  }} >
+                    <img width={200} src={footerlunar} />
+                </div>
+            </div>
             <div>
                 <div className="container">
                     <div className="row position-relative">
@@ -174,6 +185,7 @@ export default function FooterComponent() {
                 <span className=' text-danger'>WIBUGAME INC 2024</span>
                 <span className='text-white'>@ ALLRIGHT RESERVED</span>
             </div>
+
         </footer>
 
     )
