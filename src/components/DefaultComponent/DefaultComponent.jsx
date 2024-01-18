@@ -7,7 +7,10 @@ export default function DefaultComponent() {
     return (
         <div>
             <HeaderComponent />
-            <MainComponent />
+            <div className=''>
+                <MainComponent />
+            </div>
+
             <FooterComponent />
         </div>
     )

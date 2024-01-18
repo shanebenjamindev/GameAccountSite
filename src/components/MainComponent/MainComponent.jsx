@@ -3,8 +3,8 @@ import { Outlet } from 'react-router-dom'
 
 export default function MainComponent() {
   return (
-    <main>
-      this is main component
+    <main className='h-100'>
+    this is main component
       <Outlet />
     </main>
   )
