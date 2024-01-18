@@ -14,6 +14,14 @@ const routes = [
                 path: "/account",
                 element: lazy(() => import("../pages/Account/Account")),
             },
+            {
+                path: "/tutorial",
+                element: lazy(() => import("../pages/Tutorial/Tutorial")),
+            },
+            {
+                path: "/top",
+                element: lazy(() => import("../pages/Top/Top")),
+            },
         ]
     },
 ]
