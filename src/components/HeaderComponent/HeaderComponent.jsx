@@ -10,7 +10,7 @@ import { Link } from 'react-router-dom';
 
 const NavbarCus = () => {
   return (
-    <div className='d-md-flex'>
+    <div className='d-md-flex position-fixed w-100 bg-danger' style={{zIndex: 9999}}>
       <img className='d-none d-md-block' alt='lunar' src={headerlunar2} />
 
       <div className='container  w-100 d-flex align-items-center justify-content-between'>
