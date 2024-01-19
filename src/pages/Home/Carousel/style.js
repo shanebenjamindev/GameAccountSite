@@ -6,4 +6,5 @@ export const WrapperCarouselItem = styled.div`
     border-radius: 4px;
     padding: 10px;
     border: 1px solid var(--primary-fade);
+    cursor: pointer;
 `

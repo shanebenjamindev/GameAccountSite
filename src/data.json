@@ -1,43 +1,32 @@
 [
   {
-    "name": "item1",
-    "imageUrl": "./public/images/blackcover.png",
-    "price": "99"
+    "name": "Black Clover",
+    "imageUrl": "/images/blackcover.png",
+    "manufacturer": "WFS",
+    "category": "Japan"
   },
   {
-    "name": "item1",
-    "imageUrl": "./assets/images/arknight.webp",
-    "price": "99"
+    "name": "Punish : Grey Raven",
+    "imageUrl": "/images/punish-gray-raven.webp",
+    "manufacturer": "Kurogame",
+    "category": "Global"
   },
   {
-    "name": "item1",
-    "imageUrl": "./assets/images/arknight.webp",
-    "price": "99"
+    "name": "Honkai Star Rail",
+    "imageUrl": "/images/hsr.webp",
+    "manufacturer": "Mihoyo",
+    "category": "Global"
   },
   {
-    "name": "item1",
-    "imageUrl": "./assets/images/arknight.webp",
-    "price": "99"
+    "name": "Reverse: 1999",
+    "imageUrl": "/images/rever1999.png",
+    "manufacturer": "Bluepoch",
+    "category": "Global"
   },
   {
-    "name": "item1",
-    "imageUrl": "./assets/images/arknight.webp",
-    "price": "99"
-  },
-  {
-    "name": "item1",
-    "imageUrl": "./assets/images/arknight.webp",
-    "price": "99"
-  },
-  {
-    "name": "item1",
-    "imageUrl": "./assets/images/arknight.webp",
-    "price": "99"
-  },
-  {
-    "name": "item2",
-    "imageUrl": "./assets/images/arknight.webp",
-    "price": "99"
-  },
-  { "name": "item3", "imageUrl": "./assets/images/arknight.webp", "price": "99" }
+    "name": "Jujutsu Kaisen Phantom Parade",
+    "imageUrl": "/images/yuta.png",
+    "manufacturer": "Sumzap Inc.",
+    "category": "China"
+  }
 ]

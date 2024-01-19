@@ -1,6 +1,7 @@
 import React from 'react';
 import { Box, Tab, Tabs } from '@mui/material';
-
+import data from '../../../data.json';
+import ItemGameComponent from '../../../components/ItemGameComponent/ItemGameComponent';
 export default function ListGame(props) {
   const [value, setValue] = React.useState(0);
 
@@ -8,8 +9,13 @@ export default function ListGame(props) {
     setValue(newValue);
   };
 
+  const renderAllGame = () => {
+    return data.map((game, index) => {
+      return <ItemGameComponent key={index} game={game} />
+    })
+  }
   return (
-    <div className='container py-5'>
+    <div className='container py-4'>
       <div className='text-left'>
         <h4>Danh sách game</h4>
       </div>
@@ -24,21 +30,25 @@ export default function ListGame(props) {
               <Tab label="Trung Quốc/Sever khác" />
             </Tabs>
           </Box>
-          <div hidden={value !== 0}>
-            Load game ở đây
-            Tất cả
-          </div>
-          <div hidden={value !== 1}>
-            TG
-          </div>
-          <div hidden={value !== 2}>
-            Nhật
-          </div>
-          <div hidden={value !== 3}>
-            Trung
+          <div className='py-2'>
+            <div hidden={value !== 0}>
+              <div className='row'>
+                {renderAllGame()}
+              </div>
+            </div>
+            <div hidden={value !== 1}>
+              TG
+            </div>
+            <div hidden={value !== 2}>
+              Nhật
+            </div>
+            <div hidden={value !== 3}>
+              Trung
+            </div>
           </div>
         </Box>
       </div>
+      <div><button type='button' className='w-100 border-round rounded text-light p-2' style={{ backgroundColor: "var(--primary-color)" }}>Xem tất cả</button></div>
     </div >
   );
 }

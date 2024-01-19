@@ -1,7 +1,7 @@
 import { Button, Input } from 'antd';
 import styled from 'styled-components';
 
-export const WrapperHeader = styled.div `
+export const WrapperHeader = styled.div`
     background-color: var(--primary-color)
 `
 
@@ -13,6 +13,7 @@ export const WrapperAccount = styled.div`
 
 export const WrapperSearch = styled(Input)`
     border-radius: 24px;
+    width: 100%;
 `
 export const SearchButton = styled(Button)`
    border-radius: 50%;

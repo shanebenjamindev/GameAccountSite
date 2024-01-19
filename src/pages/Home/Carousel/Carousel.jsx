@@ -1,58 +1,75 @@
-import React from 'react'
-import { Col, Row } from 'antd'
-import carousel1 from '../../../assets/images/Nikki.jpg'
-import Slider from "react-slick";
+import React from 'react';
+import { Col } from 'antd';
+import Slider from 'react-slick';
 import ItemComponent from '../../../components/ItemComponent/ItemComponent';
 import { WrapperCarouselItem } from './style';
-import data from '../../../data.json'
+import data from '../../../data.json';
 
 export default function Carousel() {
+    const carouselArr = [
+        {
+            "name": "carousel1",
+            "imageUrl": "/images/carousel/carousel2.jpg"
+        },
+        {
+            "name": "carousel2",
+            "imageUrl": "/images/carousel/carousel3.png"
+        }
+    ];
 
     const settings = {
-        dots: true,
+        autoplay: true,
+        autoplaySpeed: 2000,
         infinite: true,
         speed: 500,
         slidesToShow: 1,
-        slidesToScroll: 1
-    }
+        slidesToScroll: 1,
+        responsive: [
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    infinite: true,
+                    autoplay: true,
+                    autoplaySpeed: 2000,
+                },
+            },
+            {
+                breakpoint: 576,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    infinite: true,
+                    autoplay: true,
+                    autoplaySpeed: 2000,
+                },
+            },
+        ],
+    };
 
     const renderItemCarousel = () => {
-        return data.map((item, index) => {
-            return <ItemComponent key={index} item={item} />
-        })
-    }
+        return data.map((item, index) => (
+            <ItemComponent key={index} item={item} />
+        ));
+    };
 
     return (
-        <section className='container' >
-            <div className='d-md-flex justify-content-center align-items-center'>
-                <Col md={12}>
+        <section className='container py-5'>
+            <div className='d-md-flex align-items-center'>
+                <div className='col-md-6'>
                     <WrapperCarouselItem>
                         {renderItemCarousel()}
                     </WrapperCarouselItem>
-                </Col>
-                <Col md={12}>
+                </div>
+                <div className='col-md-6'>
                     <Slider {...settings}>
-                        <div>
-                            <img src={carousel1} />
-                        </div>
-                        <div>
-                            <h3>hinh 2</h3>
-                        </div>
-                        <div>
-                            <h3>hinh 3</h3>
-                        </div>
-                        <div>
-                            <h3>4</h3>
-                        </div>
-                        <div>
-                            <h3>5</h3>
-                        </div>
-                        <div>
-                            <h3>6</h3>
-                        </div>
+                        {carouselArr.map((caro, index) => (
+                            <img width={"100%"} height="300px" key={index} src={caro.imageUrl} alt={caro.name} />
+                        ))}
                     </Slider>
-                </Col>
+                </div>
             </div>
-        </section >
-    )
+        </section>
+    );
 }

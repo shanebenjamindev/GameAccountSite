@@ -2,60 +2,63 @@ import React from 'react';
 import wibulogo from '../../assets/images/wibulogo.png';
 import headerlunar from '../../assets/images/header-lunar.png';
 import headerlunar2 from '../../assets/images/header-lunar2.png';
-import { CarOutlined, CaretDownOutlined, FileSearchOutlined, SearchOutlined, ShoppingCartOutlined, UserOutlined } from '@ant-design/icons';
+import { SearchOutlined, ShoppingCartOutlined, UserOutlined } from '@ant-design/icons';
 import { WrapperAccount, WrapperSearch, SearchButton, WrapperHeader } from './style';
-import { Button, Col, Input, Row } from 'antd';
+import { Col } from 'antd';
+import { Input } from 'antd';
 import { Link } from 'react-router-dom';
 
-export default function HeaderComponent() {
+const NavbarCus = () => {
   return (
-    <WrapperHeader>
-      <Navbar />
-    </WrapperHeader>
-  );
-}
+    <div className='d-md-flex'>
+      <img className='d-none d-md-block' alt='lunar' src={headerlunar2} />
 
-const Navbar = () => {
-  return (
-    <div className='d-flex'>
-      <img className='d-none d-md-block' src={headerlunar2} />
-      <nav className="navbar px-5 container">
-
-        <Col md={6}>
-          <div className='d-none d-md-block'>
+      <div className='container  w-100 d-flex align-items-center justify-content-between'>
+        <Col md={6} className='d-none d-md-block'>
+          <div>
             <Link to="/">
-              <img height={70} src={wibulogo} />
+              <img height={70} src={wibulogo} alt="Logo" />
             </Link>
           </div>
         </Col>
 
-        <Col md={11} sm={17}>
-          <WrapperSearch placeholder="Nhập tên game hoặc tag để tìm kiếm"
-          suffix={
+        <Col md={10} sm={21} className='my-2 text-center d-flex align-items-center'>
+          <WrapperSearch
+            type='text'
+            placeholder="Nhập tên game hoặc tag để tìm kiếm"
+            suffix={
               <SearchButton type="primary" icon={<SearchOutlined />} className='bg-danger'></SearchButton>
             }
           />
         </Col>
 
-        <Col md={3} sm={4} className='text-light'>
+        <Col md={4} className='text-light text-center d-none d-md-block'>
           <Link className='text-light' to="/account">
             <WrapperAccount>
               <UserOutlined style={{ fontSize: "25px", marginRight: "5px" }} />
-              Đăng nhập
+              <span className='d-none d-md-inline-block'>Đăng nhập</span>
             </WrapperAccount>
           </Link>
         </Col>
 
-        <Col md={3} sm={2}>
+        <Col md={4} sm={3} className='text-center'>
           <Link to="/cart">
             <button className='btn btn-outline-light'>
               <ShoppingCartOutlined style={{ fontSize: "25px", marginRight: "5px" }} />
-              Giỏ hàng
+              <span className='d-none d-md-inline-block'>Giỏ hàng</span>
             </button>
           </Link>
         </Col>
-      </nav>
-      <img className='d-none d-md-block' src={headerlunar} />
-    </div>
+      </div>
+      <img className='d-none d-md-block' alt='lunar' src={headerlunar} />
+    </div >
+  );
+};
+
+export default function HeaderComponent() {
+  return (
+    <WrapperHeader>
+      <NavbarCus />
+    </WrapperHeader>
   );
 };
