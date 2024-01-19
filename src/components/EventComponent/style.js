@@ -19,7 +19,7 @@ export const fall = keyframes`
 export const WrapperFlower = styled.div`
   position: fixed;
   top: 0; 
-  z-index: 9999;
+  z-index: -1;
   height:100%;
   width: 100%;
   `
