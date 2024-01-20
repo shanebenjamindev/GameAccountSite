@@ -5,15 +5,16 @@ export const WrapperItemGameComponent = styled.div`
     display: flex;
     cursor: pointer;
 
-    > div{
-        transition: 0.25s all ease;
-    }
+`
+export const ItemGameContainer = styled.div`
+    transition: 0.25s all ease;
 
-    &:hover > div{
-        background-color: var(--primary-color);
-        color: white;
-        transform: translateY(-5px);
-        border: 2px solid black;
-        box-shadow: 5px 5px 10px 0px var(--primary-fade);
-    }
+    &:hover{
+    background-color: var(--primary-color);
+    color: white;
+    transform: translateY(-5px);
+    border: 2px solid black;
+    box-shadow: 5px 5px 10px 0px var(--primary-fade);
+}
+
 `

@@ -51,7 +51,9 @@ button {
 }
 
 li,
-a {
+a,
+Link {
+  color: inherit;
   list-style: none;
   text-decoration: none;
 }

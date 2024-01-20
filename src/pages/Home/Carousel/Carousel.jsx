@@ -57,15 +57,15 @@ export default function Carousel() {
     return (
         <section className='container py-5'>
             <div className='d-md-flex align-items-center'>
-                <div className='col-md-6'>
+                <div className='col-md-4'>
                     <WrapperCarouselItem>
                         {renderItemCarousel()}
                     </WrapperCarouselItem>
                 </div>
-                <div className='col-md-6'>
+                <div className='col-md-8'>
                     <Slider {...settings}>
                         {carouselArr.map((caro, index) => (
-                            <img width={"100%"} height="300px" key={index} src={caro.imageUrl} alt={caro.name} />
+                            <img width={"100%"} height="100%" key={index} src={caro.imageUrl} alt={caro.name} />
                         ))}
                     </Slider>
                 </div>

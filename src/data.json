@@ -1,32 +1,208 @@
 [
   {
+    "id": "01",
     "name": "Black Clover",
     "imageUrl": "/images/blackcover.png",
     "manufacturer": "WFS",
-    "category": "Japan"
+    "category": "Japan",
+    "account": [
+      {
+        "id": "1",
+        "name": "account",
+        "password": "123",
+        "price": 9999
+      },
+
+      {
+        "id": "1",
+        "name": "account",
+        "password": "123",
+        "price": 9999
+      }
+    ]
   },
   {
+    "id": "02",
     "name": "Punish : Grey Raven",
     "imageUrl": "/images/punish-gray-raven.webp",
     "manufacturer": "Kurogame",
-    "category": "Global"
+    "category": "Global",
+    "account": [
+      {
+        "id": "1",
+        "name": "account",
+        "password": "123",
+        "price": 9999
+      },
+
+      {
+        "id": "1",
+        "name": "account",
+        "password": "123",
+        "price": 9999
+      }
+    ]
   },
   {
+    "id": "03",
     "name": "Honkai Star Rail",
     "imageUrl": "/images/hsr.webp",
     "manufacturer": "Mihoyo",
-    "category": "Global"
+    "category": "Global",
+    "account": [
+      {
+        "id": "1",
+        "name": "account",
+        "password": "123",
+        "price": 9999
+      },
+
+      {
+        "id": "1",
+        "name": "account",
+        "password": "123",
+        "price": 9999
+      }
+    ]
   },
   {
+    "id": "04",
     "name": "Reverse: 1999",
     "imageUrl": "/images/rever1999.png",
     "manufacturer": "Bluepoch",
-    "category": "Global"
+    "category": "Global",
+    "account": [
+      {
+        "id": "1",
+        "name": "account",
+        "password": "123",
+        "price": 9999
+      },
+
+      {
+        "id": "1",
+        "name": "account",
+        "password": "123",
+        "price": 9999
+      }
+    ]
   },
   {
+    "id": "05",
     "name": "Jujutsu Kaisen Phantom Parade",
     "imageUrl": "/images/yuta.png",
     "manufacturer": "Sumzap Inc.",
-    "category": "China"
+    "category": "China",
+    "account": [
+      {
+        "id": "1",
+        "name": "account",
+        "password": "123",
+        "price": 9999
+      },
+
+      {
+        "id": "1",
+        "name": "account",
+        "password": "123",
+        "price": 9999
+      }
+    ]
+  },
+  {
+    "id": "06",
+    "name": "Black Clover 2",
+    "imageUrl": "/images/blackcover.png",
+    "manufacturer": "WFS",
+    "category": "Japan",
+    "account": []
+  },
+  {
+    "id": "07",
+    "name": "Punish : Grey Raven 2",
+    "imageUrl": "/images/punish-gray-raven.webp",
+    "manufacturer": "Kurogame",
+    "category": "Global",
+    "account": [
+      {
+        "id": "1",
+        "name": "account",
+        "password": "123",
+        "price": 9999
+      },
+
+      {
+        "id": "2",
+        "name": "account",
+        "password": "123",
+        "price": 9999
+      }
+    ]
+  },
+  {
+    "id": "08",
+    "name": "Honkai Star Rail 2",
+    "imageUrl": "/images/hsr.webp",
+    "manufacturer": "Mihoyo",
+    "category": "Global",
+    "account": [
+      {
+        "id": "1",
+        "name": "account",
+        "password": "123",
+        "price": 9999
+      },
+
+      {
+        "id": "1",
+        "name": "account",
+        "password": "123",
+        "price": 9999
+      }
+    ]
+  },
+  {
+    "id": "09",
+    "name": "Reverse: 1999 (2)",
+    "imageUrl": "/images/rever1999.png",
+    "manufacturer": "Bluepoch",
+    "category": "Global",
+    "account": [
+      {
+        "id": "1",
+        "name": "account",
+        "password": "123",
+        "price": 9999
+      },
+
+      {
+        "id": "1",
+        "name": "account",
+        "password": "123",
+        "price": 9999
+      }
+    ]
+  },
+  {
+    "id": "10",
+    "name": "Jujutsu Kaisen Phantom Parade 2",
+    "imageUrl": "/images/yuta.png",
+    "manufacturer": "Sumzap Inc.",
+    "category": "China",
+    "account": [
+      {
+        "id": "1",
+        "name": "account",
+        "password": "123",
+        "price": 9999
+      },
+
+      {
+        "id": "1",
+        "name": "account",
+        "password": "123",
+        "price": 9999
+      }
+    ]
   }
 ]
