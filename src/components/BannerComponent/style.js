@@ -1,5 +1,5 @@
 import styled, { keyframes } from "styled-components";
-import banner from '../../../assets/images/banner.jpg';
+import banner from '../../assets/images/banner.jpg';
 
 export const WrapperBanner = styled.div`
     position: relative;

@@ -1,11 +1,8 @@
 import React from 'react'
 
 export default function FooterComponent() {
-
-
-
     return (
-        <footer style={{ position: "relative" }}>
+        <footer className='py-5' style={{ position: "relative", backgroundColor: "var(--primary-fade)" }}>
             <div>
                 <div className="container">
                     <div className="row position-relative">

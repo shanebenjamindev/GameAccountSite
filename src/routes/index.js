@@ -15,6 +15,10 @@ const routes = [
                 element: lazy(() => import("../pages/Account/Account")),
             },
             {
+                path: "/credit",
+                element: lazy(() => import("../pages/CreditCard/CreditCard")),
+            },
+            {
                 path: "/tutorial",
                 element: lazy(() => import("../pages/Tutorial/Tutorial")),
             },

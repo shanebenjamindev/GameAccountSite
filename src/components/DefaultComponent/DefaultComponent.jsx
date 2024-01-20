@@ -13,6 +13,7 @@ export default function DefaultComponent() {
             </div>
             <FooterComponent />
             <EventComponent />
-        </div>
+
+            </div >
     )
 }
