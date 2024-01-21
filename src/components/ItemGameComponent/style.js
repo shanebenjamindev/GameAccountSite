@@ -1,12 +1,11 @@
 import styled from "styled-components";
 
 export const WrapperItemGameComponent = styled.div`
-    border-radius: 14px;
     display: flex;
     cursor: pointer;
 
 `
-export const ItemGameContainer = styled.div`
+export const ItemGameContainer = styled(WrapperItemGameComponent)`
     transition: 0.25s all ease;
 
     &:hover{

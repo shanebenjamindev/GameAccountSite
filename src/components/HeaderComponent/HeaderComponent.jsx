@@ -33,7 +33,7 @@ const NavbarCus = () => {
         </Col>
 
         <Col md={4} className='text-light text-center d-none d-md-block'>
-          <Link className='text-light' to="/account">
+          <Link className='text-light' to="/user">
             <WrapperAccount>
               <UserOutlined style={{ fontSize: "25px", marginRight: "5px" }} />
               <span className='d-none d-md-inline-block'>Đăng nhập</span>

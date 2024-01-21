@@ -11,8 +11,8 @@ const routes = [
                 element: lazy(() => import("../pages/Home/Home")),
             },
             {
-                path: "/account",
-                element: lazy(() => import("../pages/Account/Account")),
+                path: "/user",
+                element: lazy(() => import("../pages/User/User")),
             },
             {
                 path: "/credit",
