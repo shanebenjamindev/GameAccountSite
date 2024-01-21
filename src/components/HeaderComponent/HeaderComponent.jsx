@@ -3,14 +3,22 @@ import wibulogo from '../../assets/images/wibulogo.png';
 import headerlunar from '../../assets/images/header-lunar.png';
 import headerlunar2 from '../../assets/images/header-lunar2.png';
 import { SearchOutlined, ShoppingCartOutlined, UserOutlined } from '@ant-design/icons';
-import { WrapperAccount, WrapperSearch, SearchButton, WrapperHeader } from './style';
+import { WrapperAccount, WrapperSearch, SearchButton, WrapperHeaderComponent } from './style';
 import { Col } from 'antd';
-import { Input } from 'antd';
 import { Link } from 'react-router-dom';
+import ButtonComponent from '../ButtonComponent/ButtonComponent';
 
 const NavbarCus = () => {
   return (
-    <div className='d-md-flex position-fixed w-100 bg-danger' style={{zIndex: 9999}}>
+    <div>
+
+    </div >
+  );
+};
+
+export default function HeaderComponent() {
+  return (
+    <WrapperHeaderComponent>
       <img className='d-none d-md-block' alt='lunar' src={headerlunar2} />
 
       <div className='container  w-100 d-flex align-items-center justify-content-between'>
@@ -34,31 +42,21 @@ const NavbarCus = () => {
 
         <Col md={4} className='text-light text-center d-none d-md-block'>
           <Link className='text-light' to="/user">
-            <WrapperAccount>
-              <UserOutlined style={{ fontSize: "25px", marginRight: "5px" }} />
-              <span className='d-none d-md-inline-block'>Đăng nhập</span>
-            </WrapperAccount>
+            <UserOutlined style={{ fontSize: "25px", marginRight: "5px" }} />
+            <span className='d-none d-md-inline-block'>Đăng nhập</span>
           </Link>
         </Col>
 
         <Col md={4} sm={3} className='text-center'>
-          <Link to="/cart">
-            <button className='btn btn-outline-light'>
+          <ButtonComponent variant="primary-outlined-rev" text={
+            <>
               <ShoppingCartOutlined style={{ fontSize: "25px", marginRight: "5px" }} />
               <span className='d-none d-md-inline-block'>Giỏ hàng</span>
-            </button>
-          </Link>
+            </>
+          } />
         </Col>
       </div>
       <img className='d-none d-md-block' alt='lunar' src={headerlunar} />
-    </div >
-  );
-};
-
-export default function HeaderComponent() {
-  return (
-    <WrapperHeader>
-      <NavbarCus />
-    </WrapperHeader>
+    </WrapperHeaderComponent>
   );
 };

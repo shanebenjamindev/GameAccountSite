@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function FooterComponent() {
     return (
-        <footer className='py-5' style={{ position: "relative", backgroundColor: "var(--primary-fade)" }}>
+        <footer className='pt-5' style={{ position: "relative", backgroundColor: "var(--primary-fade)" }}>
             <div>
                 <div className="container">
                     <div className="row position-relative">
@@ -170,7 +170,7 @@ export default function FooterComponent() {
                     </div>
                 </div>
             </div>
-            <div className='bg-dark p-2'>
+            <div className='bg-dark p-2 text-center'>
                 <span className=' text-danger'>WIBUGAME INC 2024</span>
                 <span className='text-white'>@ ALLRIGHT RESERVED</span>
             </div>

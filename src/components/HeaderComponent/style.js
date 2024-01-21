@@ -1,15 +1,15 @@
 import { Button, Input } from 'antd';
 import styled from 'styled-components';
 
-export const WrapperHeader = styled.div`
-    background-color: var(--primary-color)
-`
-
-export const WrapperAccount = styled.div`
+export const WrapperHeaderComponent = styled.div`
+    background-color: var(--primary-color);
+    z-index: 9999;
+    position: fixed;
+    top: 0;
+    width: 100%;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    `
+    color: white;
+`
 
 export const WrapperSearch = styled(Input)`
     border-radius: 24px;

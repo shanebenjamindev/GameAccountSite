@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Box, Tab, Tabs } from '@mui/material';
 import data from '../../../data.json';
 import ItemGameComponent from '../../../components/ItemGameComponent/ItemGameComponent';
+import ButtonComponent from '../../../components/ButtonComponent/ButtonComponent';
 
 const categories = ["Tất cả", "Global", "Japan", "China"];
 
@@ -52,13 +53,7 @@ const ListGame = () => {
         </Box>
       </div>
       <div>
-        <button
-          type='button'
-          className='w-100 border-round rounded text-light p-2'
-          style={{ backgroundColor: "var(--primary-color)" }}
-        >
-          Xem tất cả
-        </button>
+        <ButtonComponent variant="primary" text="Xem tất cả"/>
       </div>
     </div>
   );
