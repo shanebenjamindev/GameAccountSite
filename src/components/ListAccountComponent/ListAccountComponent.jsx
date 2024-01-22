@@ -41,7 +41,7 @@ export default function ListAccountComponent(props) {
     const renderGameAccount = () => {
         return game?.account.map((account) => (
             <WrapperAccountComponent
-                className='col-3'
+                className='col-md-3'
                 to={`/detail-account/${account.id}`}
                 key={account.id}>
                 <Card>

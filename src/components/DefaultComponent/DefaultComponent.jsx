@@ -11,7 +11,6 @@ export default function DefaultComponent() {
             <MainComponent />
             <FooterComponent />
             <EventComponent />
-
         </div >
     )
 }
