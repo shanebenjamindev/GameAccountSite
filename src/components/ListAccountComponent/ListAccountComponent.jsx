@@ -39,17 +39,17 @@ export default function ListAccountComponent(props) {
     const { game } = props;
 
     const renderGameAccount = () => {
-        return game?.account.map((account) => (
-            <WrapperAccountComponent
+        return game?.account.map((account, index) => (
+            <Link
                 className='col-md-3'
                 to={`/detail-account/${account.id}`}
-                key={account.id}>
+                key={index}>
                 <Card>
                     <Image src={account.imgUrl} alt='' />
                     <GameName>{game.name}</GameName>
                     <Price>Price: {account.price}</Price>
                 </Card>
-            </WrapperAccountComponent>
+            </Link>
         ));
     };
 

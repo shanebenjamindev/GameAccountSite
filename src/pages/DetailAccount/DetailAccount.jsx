@@ -39,9 +39,11 @@ const RecommendedGamesContainer = styled.div`
 export default function DetailAccount() {
   const { id } = useParams();
 
+  console.log(id);
+
   const renderRecommend = () => {
     const game = data.find((item) =>
-      item.account.some((account) => account.id === id)
+      item.account.some((account) => account)
     );
 
     const otherGames = data.filter((item) => item !== game);
@@ -66,7 +68,7 @@ export default function DetailAccount() {
 
     return (
       <Container>
-        <Title>{game.name}</Title>
+        <Title className='text-center'>ACCOUNT DETAIL</Title>
         <div className='row'>
           <div className='col-md-6'>
             <Image src={accountDetail.imgUrl} alt='' />
@@ -74,6 +76,7 @@ export default function DetailAccount() {
           <div className='col-md-6'>
             <DetailsContainer>
               <DetailsItem>ID: {accountDetail.id}</DetailsItem>
+              <DetailsItem>ID: {accountDetail.name}</DetailsItem>
               <DetailsItem>Price: {accountDetail.price}</DetailsItem>
               <div>
                 <ButtonComponent

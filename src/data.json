@@ -7,7 +7,7 @@
     "category": "Japan",
     "account": [
       {
-        "id": "1",
+        "id": "BC1",
         "name": "account BC 1",
         "password": "123",
         "price": 9999,
@@ -15,7 +15,7 @@
         "descriptions": "9999+ GEM, Full Catalog"
       },
       {
-        "id": "2",
+        "id": "BC2",
         "name": "account BC 2",
         "password": "123",
         "price": 9999,
@@ -23,7 +23,7 @@
         "descriptions": "9999+ GEM, Full Catalog"
       },
       {
-        "id": "3",
+        "id": "BC3",
         "name": "account BC 3", 
         "password": "123",
         "price": 9999,
@@ -32,7 +32,7 @@
       },
 
       {
-        "id": "4",
+        "id": "BC5",
         "name": "account BC 4",
         "password": "123",
         "price": 9999,
@@ -101,7 +101,7 @@
     "category": "Global",
     "account": [
       {
-        "id": "1",
+        "id": "REV1",
         "name": "account",
         "password": "123",
         "price": 9999,
@@ -110,7 +110,7 @@
       },
 
       {
-        "id": "1",
+        "id": "REV2",
         "name": "account",
         "password": "123",
         "price": 9999,
@@ -127,7 +127,7 @@
     "category": "China",
     "account": [
       {
-        "id": "1",
+        "id": "JJK1",
         "name": "account",
         "password": "123",
         "price": 9999,
@@ -136,7 +136,7 @@
       },
 
       {
-        "id": "1",
+        "id": "JJK2",
         "name": "account",
         "password": "123",
         "price": 9999,
@@ -161,7 +161,7 @@
     "category": "Global",
     "account": [
       {
-        "id": "1",
+        "id": "PGR3",
         "name": "account",
         "password": "123",
         "price": 9999,
@@ -170,7 +170,7 @@
       },
 
       {
-        "id": "2",
+        "id": "PGR4",
         "name": "account",
         "password": "123",
         "price": 9999,
@@ -187,7 +187,7 @@
     "category": "Global",
     "account": [
       {
-        "id": "1",
+        "id": "HSR21",
         "name": "account",
         "password": "123",
         "price": 9999,
@@ -196,7 +196,7 @@
       },
 
       {
-        "id": "1",
+        "id": "HSR23",
         "name": "account",
         "password": "123",
         "price": 9999,
@@ -213,7 +213,7 @@
     "category": "Global",
     "account": [
       {
-        "id": "1",
+        "id": "REV1",
         "name": "account",
         "password": "123",
         "price": 9999,
@@ -222,7 +222,7 @@
       },
 
       {
-        "id": "1",
+        "id": "REV2",
         "name": "account",
         "password": "123",
         "price": 9999,
@@ -239,7 +239,7 @@
     "category": "China",
     "account": [
       {
-        "id": "1",
+        "id": "JJKR1",
         "name": "account JJK 2",
         "password": "123",
         "price": 9999,
@@ -248,7 +248,7 @@
       },
 
       {
-        "id": "2",
+        "id": "JJKR2",
         "name": "account JJK 2",
         "password": "123",
         "price": 9999,
