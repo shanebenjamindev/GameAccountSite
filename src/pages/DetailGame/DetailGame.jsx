@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from 'react';
-import { useParams } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 import { WrapperSection } from '../../assets/style/commonStyle';
 import data from '../../data.json';
+import ListAccountComponent from '../../components/ListAccountComponent/ListAccountComponent';
 
 export default function Detail() {
     const { id } = useParams();
@@ -42,24 +43,13 @@ export default function Detail() {
         }
     };
 
-    const renderGameAccount = () => {
-        return game && game.account.length > 0
-            ? game.account.map((account) => (
-                <div key={account.id}>
-                    <p>Name: {account.name}</p>
-                    <p>Password: {account.password}</p>
-                    <p>Price: {account.price}</p>
-                </div>
-            ))
-            : <p>No account information available</p>;
-    };
-
-
     return (
         <WrapperSection>
             <div className='container py-2 d-md-flex text-left'>
                 <div className='col-md-4'>{renderGameDetail()}</div>
-                <div className='col-md-8'>{renderGameAccount()}</div>
+                <div className='col-md-8'>
+                    {game ? <ListAccountComponent game={game} /> : <>Hiện không có Account nào cho game này</>}
+                </div>
             </div>
         </WrapperSection>
     );

@@ -28,7 +28,11 @@ const routes = [
             },
             {
                 path: "/detail/:id",
-                element: lazy(() => import("../pages/DetailGame/Detail")),
+                element: lazy(() => import("../pages/DetailGame/DetailGame")),
+            },
+            {
+                path: "/detail-account/:id",
+                element: lazy(() => import("../pages/DetailAccount/DetailAccount")),
             },
         ]
     },

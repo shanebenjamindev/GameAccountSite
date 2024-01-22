@@ -34,7 +34,7 @@ const ListGame = () => {
       <div className='text-left'>
         <h4>Danh sách game</h4>
       </div>
-      <div className="">
+      <div>
         <Box>
           <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
             <Tabs
@@ -50,10 +50,8 @@ const ListGame = () => {
             </Tabs>
           </Box>
           {renderTabContent()}
+          <ButtonComponent variant="primary" text="Xem tất cả" />
         </Box>
-      </div>
-      <div>
-        <ButtonComponent variant="primary" text="Xem tất cả"/>
       </div>
     </div>
   );

@@ -8,12 +8,10 @@ export default function DefaultComponent() {
     return (
         <div>
             <HeaderComponent />
-            <div className=''>
-                <MainComponent />
-            </div>
+            <MainComponent />
             <FooterComponent />
             <EventComponent />
 
-            </div >
+        </div >
     )
 }
